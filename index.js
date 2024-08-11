@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Quiz
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.red.bold("Quiz Game"));
@@ -6,31 +7,31 @@ const quiz = await inquirer.prompt([
     {
         name: "question_1",
         type: "list",
-        message: chalk.bgCyanBright("Q1. What is the correct way to check if two are not equal TypeScript?"),
+        message: chalk.green("Q1. What is the correct way to check if two are not equal TypeScript?"),
         choices: ["a == b", "a === b", "a = b", "a !== b"],
     },
     {
         name: "question_2",
         type: "list",
-        message: chalk.bgMagenta("Q2. Which of the following characters is commonly allowed in variable names in TypeScript?"),
+        message: chalk.cyan("Q2. Which of the following characters is commonly allowed in variable names in TypeScript?"),
         choices: ["$", "@", "#", "&"],
     },
     {
         name: "question_3",
         type: "list",
-        message: chalk.bgYellow("Q3. Which operator is commonly used for string concatenation in TypeScript?"),
+        message: chalk.magenta("Q3. Which operator is commonly used for string concatenation in TypeScript?"),
         choices: ["a + b", "a - b", "a * b", "a / b"],
     },
     {
         name: "question_4",
         type: "list",
-        message: chalk.bgBlackBright("Q4. In TypeScript, which symbol is commonly used to terminate a statement?"),
+        message: chalk.cyan("Q4. In TypeScript, which symbol is commonly used to terminate a statement?"),
         choices: [".", ":", ";", ","],
     },
     {
         name: "question_5",
         type: "list",
-        message: chalk.bgWhite("Q5. Which method of Inquirer.js is used to start the prompt interface and receive user input?"),
+        message: chalk.green("Q5. Which method of Inquirer.js is used to start the prompt interface and receive user input?"),
         choices: ["start()", "prompt()", "init()", "run()"],
     },
 ]);
